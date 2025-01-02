@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Style Link -->
+
+    <link href="style/content.css" rel="stylesheet">
+    <link href="style/header.css" rel="stylesheet">
+    <link href="style/detailVideo.css" rel="stylesheet">
+    <link href="style/channelDetai.css" rel="stylesheet">
+    <link href="style/subscriptions.css" rel="stylesheet">
+    <link href="style/listView.css" rel="stylesheet">
+    <link href="style/subscribedChannelsView.css" rel="stylesheet">
+    <link href="style/history.css" rel="stylesheet">
+    <link href="style/playlistView.css" rel="stylesheet">
+    <link href="style/lightMode.css" rel="stylesheet">
+
+    <!-- Icon Link -->
+
+    <link href="img/youtube-logo-transparent-png-pictures-transparent-background-youtube-logo-11562856729oa42buzkng.png" rel="icon">
+
+    <!-- Script Link -->
+
+    <script src="script/videomenu.json"> </script>
+    <script src="script/channels.json"> </script>
+    <script src="script/generate.js"> </script>
+</head>
+
+<body id="body">
+
+<!-- This Section is For Header -->
+
+<div class="header">
+    <div class="start">
+        <span class="menu" onclick="showSideMenu(), sideChecker()"></span>
+        <span class="logo"></span>
+    </div>
+    <div class="center">
+        <div class="search">
+			<input id="search" type="text" placeholder="search"> 
+			<div id="overlay" class="hide"> </div>
+			<div id="result"> 	</div>
+		</div>
+        <span class="mic"></span>
+    </div>
+    <div class="end">
+        <div class="endHeaderItems">
+            <span class="videoUpload"></span>
+        </div>
+        <div class="endHeaderItems">
+            <span class="notification"></span>
+        </div>
+        <div class="endHeaderItems profilePicture">
+            <span class="profilePicture" onclick="showYourChannelMenu()"></span>
+            <div class="yourChannelMenu hide" id="yourChannelMenu">
+                <div class="yourChannelProfile">
+                    <div class="yourProfile"></div>
+                    <div class="nickName"> Taha & Navid </div>
+                    <div class="userName"> @Taha_&_Navid </div>
+                    <div class="viewChannel" onclick="showYourChannel()"> View your channel </div>
+                </div>
+                <div class="channelMenuItems borderTop">
+                    <div class="icon iconGoogle"></div>
+                    <div class="title"> Google Account </div>
+                </div>
+                <div class="channelMenuItems">
+                    <div class="icon iconSwitch"></div>
+                    <div class="title"> Switch account </div>
+                </div>
+                <div class="channelMenuItems borderBottom">
+                    <div class="icon iconSignOut"></div>
+                    <div class="title"> Sign out </div>
+                </div>
+                <div class="channelMenuItems borderTop">
+                    <div class="icon iconStudio"></div>
+                    <div class="title"> YouTube Studio </div>
+                </div>
+                <div class="channelMenuItems borderBottom">
+                    <div class="icon iconPurchases"></div>
+                    <div class="title"> Purchases and memberships </div>
+                </div>
+                <div class="channelMenuItems borderTop">
+                    <div class="icon iconData"></div>
+                    <div class="title"> Your data in YouTube </div>
+                </div>
+                <div class="channelMenuItems" id="lightMode">
+                    <div class="icon iconAppearence"></div>
+                    <div class="title"> Appearance: </div>
+                </div>
+                <div class="channelMenuItems">
+                    <div class="icon iconLanguage"></div>
+                    <div class="title"> Language: </div>
+                </div>
+                <div class="channelMenuItems">
+                    <div class="icon iconRestricted"></div>
+                    <div class="title"> Restricted Mode:  </div>
+                </div>
+                <div class="channelMenuItems">
+                    <div class="icon iconLocation"></div>
+                    <div class="title"> Location: </div>
+                </div>
+                <div class="channelMenuItems borderBottom">
+                    <div class="icon iconKeyboard"></div>
+                    <div class="title"> Keyboard shortcuts </div>
+                </div>
+                <div class="channelMenuItems">
+                    <div class="icon iconSettings borderTop borderBottom"></div>
+                    <div class="title"> Settings </div>
+                </div>
+                <div class="channelMenuItems">
+                    <div class="icon iconHelp"></div>
+                    <div class="title"> Help </div>
+                </div>
+                <div class="channelMenuItems">
+                    <div class="icon iconFeedBack"></div>
+                    <div class="title"> Send Feedback </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="sideLeftGuide" id="side">
+        <div class="main">
+            <div class="home" id="home" onclick="showVideoMenu()">  
+                <div> Home </div>
+            </div>
+            <div class="short">  
+                <div> Shorts </div>
+            </div>
+            <div class="subscriptions" id="subscriptions" onclick="showSubscriptions()">  
+                <div> Subscriptions </div>
+            </div>
+        </div>
+        <div class="you">
+            <div class="youTitle">
+            </div>
+            <div class="yourChannel" onclick="showYourChannel()">
+                <div> Your channel </div>
+            </div>
+            <div class="historyIc" onclick="showHistory()">
+                <div> History </div>
+            </div>
+            <div class="playlists" onclick="showPlaylist()">
+                <div> Playlists </div>
+            </div>
+            <div class="yourVideos">
+                <div> Your videos </div>
+            </div>
+            <div class="watchLater">
+                <div> Watch Later </div>
+            </div>
+            <div class="likedVideos">
+                <input type="radio" id="likedVideos" name="categories">
+			    <label for="likedVideos" onclick="showVideoMenu()"> Liked videos </label>
+            </div>
+        </div>
+        <div class="subscriptions">
+            <div class="subscriptionsTitle"> Subscriptions </div>
+        </div>
+        <div class="explore">
+            <div class="exploreTitle"> Explore </div>
+            <div class="trending">
+                <input type="radio" id="trending" name="categories">
+			    <label for="trending" onclick="showVideoMenu()"> Trending </label>
+            </div>
+            <div class="music">
+                <input type="radio" id="music" name="categories">
+			    <label for="music" onclick="showVideoMenu()"> Music </label>
+            </div>
+            <div class="live">
+                <input type="radio" id="live" name="categories">
+			    <label for="live" onclick="showVideoMenu()"> Live </label>
+            </div>
+            <div class="gaming">
+                <input type="radio" id="gaming" name="categories">
+			    <label for="gaming" onclick="showVideoMenu()"> Gaming </label>
+            </div>
+            <div class="news">
+                <input type="radio" id="news" name="categories">
+			    <label for="news" onclick="showVideoMenu()"> News </label>
+            </div>
+            <div class="sport">
+                <input type="radio" id="sport" name="categories">
+			    <label for="sport" onclick="showVideoMenu()"> Sport </label>
+            </div>
+            <div class="learning">
+                <input type="radio" id="learning" name="categories">
+			    <label for="learning" onclick="showVideoMenu()"> Learning </label>
+            </div>
+            <div class="fashionAndBeauty">
+                <input type="radio" id="fashionAndBeauty" name="categories">
+			    <label for="fashionAndBeauty" onclick="showVideoMenu()"> Fashion & Beauty </label>
+            </div>
+        </div>
+        <div class="more">
+            <div class="moreTitle"> More from YouTube </div>
+            <div class="youtubeStudio">
+                <div> Youtube Studio </div>
+            </div>
+            <div class="youtubeKids">
+                <div> Youtube Kids </div>
+            </div>
+        </div>
+        <div class="support">
+            <div class="settings">
+                <div> Settings </div>
+            </div>
+            <div class="reportHistory">
+                <div> Report history </div>
+            </div>
+            <div class="help">
+                <div> Help </div>
+            </div>
+            <div class="sendFeedback">
+                <div> Send feedback </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainPage flex" id="grid">
+            <!-- This section Will Generate Dynamic -->
+    </div>
+</div>
+
+<!-- if you click on every single video this page will pop up -->
+<!-- and show you every Detail of a video -->
+
+<div id="detailVideo" class="hide">
+    <div class="mainVideoDetail">
+        <!-- This Section Will Generate Dynamic -->
+        <video class="currentVideo" id="vidPlay" controls autoplay>
+            <source src="">
+        </video> 
+        <div id="titleVideoDetail"></div>
+        <div class="currentVideoStatus">
+            <img class="channelProfile2" id="channelProfileid">
+            <div class="holderstatus">
+                <span class="channelNameDetail" id="channelNameDetailid"></span>
+                <span class="channelSubscribers" id="channelSubscribersidvid"></span>
+            </div>
+            <span class="subscribeButton" id="subscribeBtn" onclick="videoSubed()"> Subscribe </span>
+            <span class="videoLikeButton" id="videoLikeButtonid" onclick="videoLiked()"></span>
+            <span class="videoDislikeButton"></span>
+            <span class="videoShareButton"> Share </span>
+            <span class="videoSaveToButton"> Save </span>
+        </div>
+        <div class="currentVideoDescription" id="currentVideoDescriptionid"> </div>
+        <div class="currentVideoCommentSorting">
+            <div class="commentsNumber"> 1M Comments </div>
+            <div class="sortComment"> Sort by </div>
+        </div>
+        <div class="sendComment">
+            <div class="channelProfile"></div>
+            <div class="addComment"> Add a comment... </div>
+        </div>
+        <div class="allComments"></div>
+    </div>
+    <div class="sideVideoDetail" id="sideVideoDetailid">
+        <!-- This Section Will Generate Dynamic -->
+        <!-- note : this part will show you every videos of a certain channel -->
+    </div>
+</div>
+
+<!-- This section is for viewing your own channel -->
+
+<div id="channelDetail" class="hide">
+    <div class="headerChannelDetail">
+        <img class="channelBanner" id="channelBannerid" src="img/bannerYourChannel.jpg">
+        <div class="channelStatus">
+            <img class="channelProfile" id="channelProfilechd" src="img/user.png">
+            <span class="channelNamechd" id="channelNamechdid"> Taha & Navid </span>
+            <span class="channelSubscribers">
+                <span class="username" id="usernameid"> @Taha_&_Navid </span>
+                <span class="subscribersCount" id="subscribersCountid"> 10B subscribers </span>
+                <span class="videosCount" id="videosCountid"> 1 videos </span>
+            </span>
+            <span class="channelBio" id="channelBioid"> baray in webapp zahmat ziad keshide shode lotfan sub kon </span>
+            <span class="subscribeButton"> Subscribe </span>
+        </div>
+        <div class="channelSorting">
+            <span class="home"> Home </span>
+            <span class="videos"> Videos </span>
+            <span class="shorts"> Shorts </span>
+            <span class="live"> Live </span>
+            <span class="playlists"> Playlists </span>
+            <span class="community"> Community </span>
+        </div>
+    </div>
+    <div class="contentDetailChannel" id="contentDetailChannelid">>
+    </div>
+</div>
+
+<!-- This section will generate dynamic  -->
+<!-- and show you every videos of channel that you subscribed -->
+
+<!-- view 1 -->
+
+<div id="subscriptionsGrid" class="hide">
+    <div class="top">
+        <div class="filter"> Latest </div>
+        <div class="manageSubscribers" onclick="showManage()"> Manage </div>
+        <div class="gridView"></div>
+        <div class="listView" id="listViewBtn" onclick="showListView()"></div>
+    </div>
+    <div class="contentSubscriptions" id="contentsubed">
+        <!-- <div class="video"> 
+            <img class="thumbnail" src="img/images.png">
+            <span class="videoDuration"> 00:00 </span>
+            <img src="img/images.png" class="channelProfile"></img>
+            <span class="videoDiscription"> amoozesh baz kardan youtube </span>  
+            <span class="channelName"> YouTube </span>
+            <span class="videoView"> 1 views </span>             
+            <span class="videoDate"> 1 hour ago </span> 
+        </div> -->
+    </div>
+</div>
+
+<!-- view 2 -->
+
+<div class="showList hide" id="listView">
+</div>
+
+<!-- view 3 -->
+
+<div class="showSubscribedYoutubersChannel hide" id="manageSubscribers">
+</div>
+
+<!-- This section will generate dynamic -->
+<!-- and show you every previous video that you watched -->
+
+<div class="history hide" id="historyView">
+    <!-- <div class="titleHistory"> Watch history </div>
+    <div class="mainHistory">
+        <div class="watchedVideo">
+            <img class="thumbnailHistory" src="img/images.png">
+            <span class="videoTitleHistory"> video kheili kheili khafan </span>
+            <div class="inline3">
+                <span class="channelNameHidtory">Afghanistan interbational</span>
+                <span class="videoViewHistory"> 2 views </span>
+            </div>
+            <span class="videoDiscriptionHistory"> salam salam salam salam salam salam salam salam salam salam salam salam </span>
+        </div>
+    </div> -->
+</div>
+
+<!-- This section will generate dynamic -->
+<!-- and show you every video that you saved on your playlist -->
+
+<div class="playlistView hide" id="playList">
+    <!-- <div class="playlistTitle"> Playlists </div>
+    <div class="mainPlaylists">
+        <div class="playlistFullDetail">
+            <img class="coverPlaylist" src="img/images.png">
+            <span class="namePlaylist"> Liked Videos </span>
+        </div>
+    </div> -->
+</div>
+
+<script src="script/lightMode.js"></script>
+
+
+<script> 
+
+
+// dynamic generation
+
+fillWithVideos("grid",videos);
+
+// show detail channel & video
+
+function showDetailVideo(videoId1){
+    side.className = "hide";
+    grid.className = "hide";
+    channelDetail.className = "hide";
+    detailVideo.className = "flex";
+    videoLikeButtonid.setAttribute("data-id",videoId1);
+    subscribeBtn.setAttribute("data-id",videoId1);
+
+    let curVideo = videos.find(el => el.id == videoId1);
+    titleVideoDetail.innerHTML = curVideo.videoDiscription;
+    vidPlay.src = "vids/" + curVideo.videoSrc[0];
+    videoLikeButtonid.innerHTML = curVideo.like;
+    currentVideoDescriptionid.innerHTML = curVideo.currentVideoDescription;
+
+    chan = channels.find(el => el.id == curVideo.channel);
+    filteredRelVideos = videos.filter(el => el.channel == curVideo.channel);
+    channelNameDetailid.innerHTML = chan.fname;
+    channelProfileid.src = "img/channel/" + chan.channelProfile[0];
+    channelSubscribersidvid.innerHTML = chan.subcha + "       subscribers";
+    
+    channelNameDetailid.onclick = function(){
+		showDetailChannel(chan.id);
+	}
+    fillWithRelVids();
+    likeBtnStyle()
+}
+
+// generate Side Detail Video (Related Videos)
+
+function generateRelVid(){
+    let id = filteredRelVideos[i].id;
+    let id2 = chan.id;
+    let relVid = document.createElement("div");
+    relVid.className = "relatedVideos";
+
+        let relVidTum = document.createElement("img");
+        relVidTum.className = "thumbnail";
+        relVidTum.src = "img/video/" + filteredRelVideos[i].thumbnail;
+
+        relVidTum.addEventListener("click",() => {showDetailVideo(id);});
+
+        let videoDis = document.createElement("span");
+        videoDis.className = "videoDiscription";
+        videoDis.innerHTML = filteredRelVideos[i].videoDiscription;
+
+        let chaNam = document.createElement("span");
+        chaNam.className = "channelName";
+        chaNam.innerHTML = chan.fname;
+        chaNam.addEventListener("click",() => {showDetailChannel(id2);});
+
+        let vAndD = document.createElement("div");
+        vAndD.className = "viewAndDate";
+
+            let vidV = document.createElement("span");
+            vidV.className = "videoView";
+            vidV.innerHTML = filteredRelVideos[i].videoView + " views ";
+
+            let vidD = document.createElement("span");
+            vidD.className = "videoDate";
+            vidD.innerHTML = " • " + filteredRelVideos[i].videoDate;
+
+    relVid.appendChild(relVidTum);
+    relVid.appendChild(videoDis);
+    relVid.appendChild(chaNam);
+    relVid.appendChild(vAndD);
+    vAndD.appendChild(vidV);
+    vAndD.appendChild(vidD);
+
+    sideVideoDetailid.appendChild(relVid);
+}
+function fillWithRelVids(){
+    for(i = 0; i<filteredRelVideos.length; i++){
+        generateRelVid();
+    }
+}
+
+// Generate Detail Channel
+
+function showDetailChannel(channelId){
+    side.className = "sideLeftGuide";
+    grid.className = "hide";
+    channelDetail.className = "flex";
+    detailVideo.className = "hide";
+    contentDetailChannelid.classList.remove("hide");
+    contentDetailChannelid.classList.add("contentDetailChannel");
+
+    let curchannel = videos.find(el => el.id == channelId);
+    let chand = channels.find(el => el.id == curchannel.channel);
+
+    channelNamechdid.innerHTML = chand.fname;
+    channelBannerid.src = "img/channel/" + chand.channelBanner[0];
+    channelProfilechd.src = "img/channel/" + chand.channelProfile[0];
+    usernameid.innerHTML = "@" + chand.usernameid;
+    subscribersCountid.innerHTML = chand.subcha + "      subscribers";
+    videosCountid.innerHTML = chand.videonum + "     videos";
+    channelBioid.innerHTML = chand.channeldisceription;
+
+    /*  from youtuber  */
+	
+	let channelVideo = videos.filter(el => el.channel == chand.id);
+	fillWithVideos("contentDetailChannelid",channelVideo);
+}
+
+// show subscriptions
+
+function showSubscriptions(){
+    grid.classList.add("hide");
+    grid.classList.remove("flex");
+    subscriptionsGrid.classList.add("flex");
+    subscriptionsGrid.classList.remove("hide");
+    listView.classList.add("hide");
+    listView.classList.remove("flex");
+    manageSubscribers.classList.add("hide");
+    manageSubscribers.classList.remove("flex");
+    historyView.classList.add("hide");
+    historyView.classList.remove("flex");
+    playList.classList.add("hide");
+    playList.classList.remove("flex");
+    channelDetail.classList.add("hide");
+    channelDetail.classList.remove("flex");
+    detailVideo.classList.add("hide");
+    detailVideo.classList.remove("flex");
+    generateSubedVideos();
+}
+
+function showManage(){
+    subscriptionsGrid.classList.add("hide");
+    subscriptionsGrid.classList.remove("flex");
+    manageSubscribers.classList.add("flex");
+    manageSubscribers.classList.add("showSubscribedYoutubersChannel");
+    manageSubscribers.classList.remove("hide");
+    generateManageVideos();
+}
+
+function showListView(){
+    subscriptionsGrid.classList.add("hide");
+    subscriptionsGrid.classList.remove("flex");
+    listView.classList.add("flex");
+    listView.classList.remove("hide");
+    generateListVideos();
+}
+
+// show history
+
+function showHistory(){
+    historyView.classList.add("flex");
+    historyView.classList.remove("hide");
+    grid.classList.add("hide");
+    grid.classList.remove("flex");
+    subscriptionsGrid.classList.add("hide");
+    subscriptionsGrid.classList.remove("flex");
+    listView.classList.add("hide");
+    listView.classList.remove("flex");
+    manageSubscribers.classList.add("hide");
+    manageSubscribers.classList.remove("flex");
+    playList.classList.add("hide");
+    playList.classList.remove("flex");
+    channelDetail.classList.add("hide");
+    channelDetail.classList.remove("flex");
+    detailVideo.classList.add("hide");
+    detailVideo.classList.remove("flex");
+}
+
+// show playlist
+
+function showPlaylist(){
+    historyView.classList.add("hide");
+    historyView.classList.remove("flex");
+    grid.classList.add("hide");
+    grid.classList.remove("flex");
+    subscriptionsGrid.classList.add("hide");
+    subscriptionsGrid.classList.remove("flex");
+    listView.classList.add("hide");
+    listView.classList.remove("flex");
+    manageSubscribers.classList.add("hide");
+    manageSubscribers.classList.remove("flex");
+    playList.classList.add("flex");
+    playList.classList.remove("hide");
+    channelDetail.classList.add("hide");
+    channelDetail.classList.remove("flex");
+    detailVideo.classList.add("hide");
+    detailVideo.classList.remove("flex");
+}
+
+// Show Your Channel
+
+function showYourChannel(){
+    channelDetail.classList.add("flex");
+    channelDetail.classList.remove("hide");
+    historyView.classList.add("hide");
+    historyView.classList.remove("flex");
+    grid.classList.add("hide");
+    grid.classList.remove("flex");
+    subscriptionsGrid.classList.add("hide");
+    subscriptionsGrid.classList.remove("flex");
+    listView.classList.add("hide");
+    listView.classList.remove("flex");
+    manageSubscribers.classList.add("hide");
+    manageSubscribers.classList.remove("flex");
+    playList.classList.add("hide");
+    playList.classList.remove("flex");
+    detailVideo.classList.add("hide");
+    detailVideo.classList.remove("flex");
+    contentDetailChannelid.classList.add("hide");
+    contentDetailChannelid.classList.remove("contentDetailChannel");
+
+    channelBannerid.src = "img/bannerYourChannel.jpg";
+    channelProfilechd.src = "img/user.png";
+    channelNamechdid.innerHTML = "Taha & Navid";
+    usernameid.innerHTML = "@Taha_&_Navid";
+    subscribersCountid.innerHTML = "10B subscribers";
+    videosCountid.innerHTML = " 0 video ";
+    channelBioid.innerHTML = "baray in webapp zahmat ziad keshide shode lotfan sub kon ";
+}
+
+// Show Your Channel Menu
+
+flag = 0;
+function showYourChannelMenu(){
+    if(flag == 0){
+        yourChannelMenu.classList.add("show");
+        yourChannelMenu.classList.remove("hide"); 
+        flag = 1;
+    }
+    else if(flag == 1){
+        yourChannelMenu.classList.remove("show"); 
+        yourChannelMenu.classList.add("hide");
+        flag = 0;
+    }
+}
+
+// Show/Hide Side Left Menu
+
+flag2 =0;
+
+function showSideMenu(){
+    if(flag2 == 0){
+        side.classList.add("hide"); 
+        side.classList.remove("sideLeftGuide");
+        flag2 = 1;
+    }
+    else if(flag2 == 1){
+        side.classList.remove("hide");
+        side.classList.add("sideLeftGuide"); 
+        flag2 = 0;
+    }
+}
+
+// This function will check if side Left menu is hide or not then change the style of home videos
+
+function sideChecker(){
+    if(flag2 == 1){
+        grid.style.marginLeft = "0";
+        grid.style.width = "100%";
+        getIdAndChangeWidth1();
+        getIdAndChangeheight1();
+    }
+    else if(flag2 == 0){
+        grid.style.marginLeft = "15.625%";
+        grid.style.width = "84.375%";
+        getIdAndChangeWidth2();
+        getIdAndChangeheight2()
+    }
+}
+
+function getIdAndChangeWidth1(){
+    for(let i=0; i<18;i++){
+        let idVideo = "videoId" + [i].toString();
+        let idTum = "tumId" + [i].toString();
+        let holT = "holId" + [i].toString();
+        document.getElementById(idVideo).style.width = "341.983px";
+        document.getElementById(idVideo).style.height = "292.35px";
+        document.getElementById(holT).style.height = "192.35px";
+    }
+}
+
+function getIdAndChangeWidth2(){
+    for(let i=0; i<18;i++){
+        let idVideo = "videoId" + [i].toString();
+        let idTum = "tumId" + [i].toString();
+        let holT = "holId" + [i].toString();
+        document.getElementById(idVideo).style.width = "405.317px";
+        document.getElementById(idVideo).style.height = "327.983px";
+        document.getElementById(holT).style.height = "227.983px";
+    }
+}
+
+
+// filter based on categories
+
+trending.onclick = function() {
+	filterData ();
+};
+music.onclick = function() {
+	filterData ();
+};
+live.onclick = function() {
+	filterData ();
+};
+gaming.onclick = function() {
+	filterData ();
+};
+news.onclick = function() {
+	filterData ();
+};
+sport.onclick = function() {
+	filterData ();
+};
+learning.onclick = function() {
+	filterData ();
+};
+fashionAndBeauty.onclick = function() {
+	filterData ();
+};
+likedVideos.onclick = function() {
+	isLikedOrNot ();
+};
+search.onkeyup = function() {
+	filterData ();
+};
+
+function filterData(){
+
+	// category filter
+	
+	allCat = true;	
+	catv1 = "";	
+	catv2 = "";	
+	catv3 = "";	
+    catv4 = "";	
+	catv5 = "";	
+	catv6 = "";	
+    catv7 = "";	
+	catv8 = "";	
+    // catv9 = "";
+	
+	if(trending.checked){
+		catv1 = "";
+		allCat = false;			
+	}
+	else if(music.checked){
+		catv2 = "موزیک";
+		allCat = false;	
+	}
+	else if(live.checked){
+		catv3 = "";
+		allCat = false;	
+	}	
+	else if(gaming.checked){
+		catv4 = "گیمینگ";
+		allCat = false;	
+	}
+	else if(news.checked){
+		catv5 = "";
+		allCat = false;	
+	}	
+    else if(sport.checked){
+		catv6 = "ورزشی";
+		allCat = false;	
+	}
+	else if(learning.checked){
+		catv7 = "آموزشی";
+		allCat = false;	
+	}	
+    else if(fashionAndBeauty.checked){
+		catv8 = "";
+		allCat = false;	
+	}
+
+	let filtered = videos.filter((el => el.category == catv1 || el.category == catv2 || el.category == catv3 || el.category == catv4 || el.category == catv5 || el.category == catv6 || el.category == catv7 || el.category == catv8 || allCat &&  el.videoDiscription.indexOf(search.value) != -1 && search.value!=' '));
+    fillWithVideos("grid", filtered);
+}
+
+// Show Home Videos
+
+function showVideoMenu(){
+    channelDetail.classList.add("hide");
+    channelDetail.classList.remove("flex");
+    historyView.classList.add("hide");
+    historyView.classList.remove("flex");
+    grid.classList.add("flex");
+    grid.classList.add("mainPage");
+    grid.classList.remove("hide");
+    subscriptionsGrid.classList.add("hide");
+    subscriptionsGrid.classList.remove("flex");
+    listView.classList.add("hide");
+    listView.classList.remove("flex");
+    manageSubscribers.classList.add("hide");
+    manageSubscribers.classList.remove("flex");
+    playList.classList.add("hide");
+    playList.classList.remove("flex");
+    detailVideo.classList.add("hide");
+    detailVideo.classList.remove("flex");
+    fillWithVideos("grid",videos);
+}
+
+// Liking System
+
+function isLikedOrNot(){
+    let filterLiked = videos.filter((el => el.isLiked == "yes"))
+    fillWithVideos("grid", filterLiked);
+}
+
+function videoLiked(){
+    let cid = videoLikeButtonid.getAttribute("data-id");
+	curVideoL = videos.find(el => el.id == cid);
+    curVideoL.isLiked = "yes";
+}
+
+function likeBtnStyle(){
+    if(curVideoL.isLiked = "yes"){
+        videoLikeButtonid.style.backgroundImage = "url('img/icons8-like-50(1)k.png')";
+    }
+    else if(curVideoL.isLiked = ""){
+        videoLikeButtonid.style.backgroundImage = "url('img/icons8-like-50\(1\).png')";
+    }
+}
+
+// subscribe system
+
+function isSubedOrNot(){
+    filterSubed = channels.filter((el => el.isSubed == "yes"));  
+    let x = filterSubed.values();
+    for(let e of x){
+        filterSubedChannelsVideos = videos.filter((el => el.channel == e.id));
+    }
+}
+
+function videoSubed(){
+    let cid = subscribeBtn.getAttribute("data-id");
+    let curVideo = videos.find((el => el.id == cid));
+    let curChannel = channels.find((el => el.id == curVideo.channel))
+    curChannel.isSubed = "yes";
+    alert(curChannel.isSubed);
+    isSubedOrNot()
+}
+
+function createSubedVideos(){
+    isSubedOrNot();
+    let id = filterSubedChannelsVideos[el].id
+
+    let vid = document.createElement("div");
+    vid.className = "video";
+
+    let tum = document.createElement("img");
+    tum.className = "thumbnail";
+    tum.src = "img/video/" + filterSubedChannelsVideos[el].thumbnail;
+    tum.addEventListener("click",() => {showDetailVideo(id);});
+
+    let vidDur = document.createElement("span");
+    vidDur.className = "videoDuration";
+    vidDur.innerHTML = filterSubedChannelsVideos[el].videoDuration;
+
+    let chanPro = document.createElement("img");
+    chanPro.className = "channelProfile";
+    chanPro.src = "img/channel/" + filterSubedChannelsVideos[el].channelProfile;
+
+    let vidDis = document.createElement("span");
+    vidDis.className = "videoDiscription";
+    vidDis.innerHTML = filterSubedChannelsVideos[el].videoDiscription;
+
+    let chaNam = document.createElement("span");
+    chaNam.className = "channelName";
+    chaNam.innerHTML = filterSubedChannelsVideos[el].fname;
+
+    let vidView = document.createElement("span");
+    vidView.className = "videoView";
+    vidView.innerHTML = filterSubedChannelsVideos[el].videoView + " views";
+
+    let vidDate = document.createElement("span");
+    vidDate.className = "videoDate";
+    vidDate.innerHTML = filterSubedChannelsVideos[el].videoDate + " ago";
+
+    vid.appendChild(tum);
+    vid.appendChild(vidDur);
+    vid.appendChild(chanPro);
+    vid.appendChild(vidDis);
+    vid.appendChild(chaNam);
+    vid.appendChild(vidView);
+    vid.appendChild(vidDate);
+    contentsubed.appendChild(vid);
+}
+function createManage(){
+    let main = document.createElement("div");
+    main.className = "main";
+
+    let profSC = document.createElement("img");
+    profSC.className = "profileSubscribedChannel";
+    profSC.src = "img/channel/" + filterSubed[p].channelProfile;
+
+    let SubCN = document.createElement("span");
+    SubCN.className = "subscribedChannelName";
+    SubCN.innerHTML = filterSubed[p].fname;
+
+    main.appendChild(profSC);
+    main.appendChild(SubCN);
+    manageSubscribers.appendChild(main);
+}
+function createList(){
+    let id = filterSubedChannelsVideos[c].id
+
+    let videoListView = document.createElement("div");
+    videoListView.className = "videoListView";
+
+    let inl = document.createElement("div");
+    inl.className = "inline";
+
+    let chanPro = document.createElement("img");
+    chanPro.className = "profileChannel";
+    chanPro.src = "img/channel/" + filterSubedChannelsVideos[c].channelProfile;
+
+    let chaNam = document.createElement("span");
+    chaNam.className = "channelName";
+    chaNam.innerHTML = filterSubedChannelsVideos[c].fname;
+
+    let tum = document.createElement("img");
+    tum.className = "thumbnail";
+    tum.src = "img/video/" + filterSubedChannelsVideos[c].thumbnail;
+    tum.addEventListener("click",() => {showDetailVideo(id);});
+
+    let vidDis = document.createElement("span");
+    vidDis.className = "videoTitle";
+    vidDis.innerHTML = filterSubedChannelsVideos[c].videoDiscription;
+
+    let ChannStat = document.createElement("div");
+    ChannStat.className = "channelStatus";
+
+    let chaNam2 = document.createElement("span");
+    chaNam2.className = "channelName";
+    chaNam2.innerHTML = filterSubedChannelsVideos[c].fname;
+
+    let vidView = document.createElement("span");
+    vidView.className = "videoView";
+    vidView.innerHTML = filterSubedChannelsVideos[c].videoView + " views";
+
+    let vidDate = document.createElement("span");
+    vidDate.className = "videoDate";
+    vidDate.innerHTML = filterSubedChannelsVideos[c].videoDate + " ago";
+
+    let vidDes = document.createElement("span")
+    vidDes.className = "videoDiscription"
+    vidDes.innerHTML = filterSubedChannelsVideos[c].currentVideoDescription;
+
+
+    videoListView.appendChild(inl);
+    inl.appendChild(chanPro);
+    inl.appendChild(chaNam);
+    videoListView.appendChild(tum);
+    videoListView.appendChild(vidDis);
+    videoListView.appendChild(ChannStat);
+    ChannStat.appendChild(chaNam2);
+    ChannStat.appendChild(vidView);
+    ChannStat.appendChild(vidDate);
+    videoListView.appendChild(vidDes);
+
+    listView.appendChild(videoListView);
+
+}
+
+function generateSubedVideos(){
+    isSubedOrNot();
+    for(el = 0; el < filterSubedChannelsVideos.length; el++){
+        createSubedVideos();
+    }
+}
+function generateManageVideos(){
+    isSubedOrNot();
+    for(p = 0; p < filterSubed.length; p++){
+        createManage();
+    }
+}
+function generateListVideos(){
+    isSubedOrNot();
+    for(c = 0; c < filterSubedChannelsVideos.length; c++){
+        createList();
+    }
+}
+</script>
+</body>    
+</html>
