@@ -1,0 +1,10 @@
+var channels = [{id:1,isSubed:"",usernameid:"chef_smp",subcha:"71k",videonum:3,channeldisceription:"به چنل  ما خوش اومدی عشق داداش",channelBanner:["chaban1.jpg"],fname:"chef_smp",channelProfile:["cha1.jpg"]},
+                {id:2,isSubed:"",usernameid:"erfantoxic410",subcha:"121k",videonum:2,channeldisceription:"سلام رفقا چطورید عرفان تاکسیک هستم ! و شما جزو لشکریان تاکسیک آرمی هستید !",channelBanner:["chaban2.jpg"],fname:"Erfan Toxic",channelProfile:["cha2.jpg"]},   
+                {id:3,isSubed:"",usernameid:"MatinTMX",subcha:"54.4K",videonum:2,channeldisceription:"همیشه پلیری بی ادعا بودمو هستم ولی خب فقط انتقام میگیرمو انمی کتک میزنم 😁",channelBanner:["chaban3.jpg"],fname:"MATIN TMX GAMiNG",channelProfile:["cha3.jpg"]},
+                {id:4,isSubed:"",usernameid:"MohsenLorestani",subcha:"148K",videonum:2,channeldisceription:"Welcome to official channel of Mohsen Lorestani.",channelBanner:["chaban4.jpg"],fname:"Mohsen Lorestani",channelProfile:["cha4.jpg"]}, 
+                {id:5,isSubed:"",usernameid:"BehnamBaniOfficial",subcha:"113K ",videonum:2,channeldisceription:"| The official YouTube Channel of Behnam Bani |",channelBanner:["chaban5.jpg"],fname:"Behnam Bani I Avaye Farvahar",channelProfile:["cha5.jpg"]},
+                {id:6,isSubed:"",usernameid:"afintltv",subcha:"261K",videonum:2,channeldisceription:"The First 24/7 International News Channel for Afghanistan",channelBanner:["chaban6.jpg"],fname:"Afghanistan International",channelProfile:["cha6.jpg"]}, 
+                {id:7,isSubed:"",usernameid:"volleyballworld",subcha:"3.21M",videonum:2,channeldisceription:"",channelBanner:["chaban7.jpg"],fname:"volleyball",channelProfile:["cha7.jpg"]},
+                {id:8,isSubed:"",usernameid:"FOOT_NEWS90",subcha:"42K",videonum:2,channeldisceription:"ما در این کانال شما رو کامل از اخبار و حواشی مهم فوتبال",channelBanner:["chaban8.jpg"],fname:"FOOT NEWS",channelProfile:["cha8.jpg"]}, 
+
+]
