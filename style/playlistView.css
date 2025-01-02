@@ -1,0 +1,40 @@
+.playlistView {
+    justify-content: center;
+    flex-flow: row wrap;
+    background: #0F0F0F;
+    width: 84.375%;
+    margin-left: 15.625%;
+}
+
+.playlistView > .playlistTitle {
+    font-family: roboto;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    width: 1248px;
+    height: 50px;
+}
+
+.playlistView > .mainPlaylists {
+    width: 1248px; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.playlistView > .mainPlaylists > .playlistFullDetail {
+    width: 300px;
+    height: 264px;
+}
+
+.playlistView > .mainPlaylists > .playlistFullDetail > .coverPlaylist {
+    height: 169px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.playlistView > .mainPlaylists > .playlistFullDetail > .namePlaylist {
+    font-family: roboto;
+    color: white;
+    font-size: 16px;
+}

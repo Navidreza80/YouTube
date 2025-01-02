@@ -1,0 +1,68 @@
+.history {
+    justify-content: center;
+    flex-flow: row wrap;
+    background: #0F0F0F;
+    width: 84.375%;
+    margin-left: 15.625%;
+}
+
+.history > .titleHistory {
+    width: 1070px;
+    height: 50px;
+    font-family: roboto;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.history > .mainHistory {
+    width: 1070px;
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+}
+
+.history > .mainHistory > .watchedVideo {
+    width: 628px;
+    height: 138px;
+    display: flex;
+    justify-content: left;
+    flex-flow: column wrap;
+}
+
+.history > .mainHistory > .watchedVideo > .thumbnailHistory {
+    width: 246px;
+    height: 100%;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.history > .mainHistory > .watchedVideo > .videoTitleHistory {
+    font-family: "Roboto","Arial",sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.history > .mainHistory > .watchedVideo > .inline3 {
+
+}
+
+.history > .mainHistory > .watchedVideo > .inline3 > .channelNameHidtory {
+    font-family: "Roboto","Arial",sans-serif;
+    color: gray;
+    font-size: 13px;
+}
+
+.history > .mainHistory > .watchedVideo > .inline3 > .videoViewHistory {
+    font-family: "Roboto","Arial",sans-serif;
+    color: gray;
+    font-size: 13px;
+}
+
+.history > .mainHistory > .watchedVideo > .videoDiscriptionHistory {
+    margin-top: 10px;
+    font-family: "Roboto","Arial",sans-serif;
+    color: gray;
+    font-size: 13px;
+}

@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    background: #0F0F0F;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.flex{
+    display: flex;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: robotoL;
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 170px;
+    background: #0F0F0F;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.header > .start {
+    /* width: 169px; */
+    width: 11.00260416666667%;
+    /* height: 40px; */
+    height: 71.42857142857143%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    gap: 15px;
+}
+
+.header > .start > .menu {
+    /* width: 40px; */
+    width: 23.66863905325444%;
+    /* height: 40px; */
+    height: 100%;
+    background: url("../img/icons8-menu-64.png") no-repeat 50% 50%;
+    background-size: 60%;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.header > .start > .menu:hover {
+    background-color: #272727;
+
+}
+
+.header > .start > .logo {
+    /* width: 90px; */
+    width: 53.25443786982249%;
+    /* height: 20px; */
+    height: 50%;
+    background: url("../img/ytd.png") no-repeat 50% 50%;
+    background-size: 100%;
+}
+
+.header > .center {
+    width: 732px;
+    /* height: 40px; */
+    height: 71.42857142857143%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.center > .search {
+    /* width: 640px; */
+    width: 87.43169398907104%;
+    /* height: 40px; */
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 999999999999;
+}
+
+.center > .search > #search{
+    width: 90%;
+    height: 90%;
+    outline: 0 none;
+    border: 0 none;
+    border-radius: 100px;
+    background: #121212 url("../img/icons8-search-50\(1\).png") no-repeat 135% 50%;
+    background-size: 33%;
+    border: 1px solid #303030;
+    color: #b0b0b0;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 2%;
+}
+.center > .search > #overlay{
+	position: relative;
+	top: 0;
+	left: 0;
+	background: rgb(255, 255, 255);
+	width: 568px;
+    overflow-y: auto;
+	z-index: 200;
+}
+.search > #result{
+	position: absolute;
+	right: 20px;
+	top: 40px;
+	max-height: 350px;
+
+    color: #ccc;
+	overflow-y: auto;
+	background: #212121;
+	z-index: 300;
+	border-radius: 8px;
+	width: 90%;
+    cursor: pointer;
+    text-align: right;
+    
+}
+.search > #result > div{
+    padding: 8px 0;
+    padding-right: 20px;
+    
+}
+.search > #result > div:hover{
+    background: #303030;
+}
+.header > .center > .mic {
+    /* width: 40px; */
+    width: 5.46448087431694%;
+    /* height: 40px; */
+    height: 100%;
+    border-radius: 100%;
+    background: #272727 url("../img/icons8-microphoned-24.png") no-repeat 50% 50%;
+}
+
+.header > .end {
+    width: 180px;
+    /* height: 40px; */
+    height: 71.42857142857143%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.header > .end > .endHeaderItems {
+    width: 40px;
+    /* width: 15.68627450980392%; */
+    /* height: 40px; */
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header > .end > .endHeaderItems:hover {
+    background: #272727;
+}
+
+.header > .end > .endHeaderItems > .videoUpload {
+    background: url("../img/video-camera.png") no-repeat 50% 50%;
+    background-size: 70%;
+    width: 75%;
+    height: 75%;
+}
+
+.header > .end > .endHeaderItems > .notification {
+    background: url("../img/icons8-notification-50\(1\).png") no-repeat 50% 50%;
+    background-size: 70%;
+    width: 75%;
+    height: 75%;
+}
+
+.header > .end > .endHeaderItems > .profilePicture {
+    background: url("../img/user.png") no-repeat 50% 50%;
+    background-size: 60%;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu {
+    width: 300px;
+    height: 720px;
+    background: #282828;
+    position: absolute;
+    right: 75px;
+    top: 10px;
+    z-index: 100000000000000000000000000000000000000000000;
+    border-radius: 15px;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .yourChannelProfile {
+    height: 104.8px;
+    width: 100%;
+    border-bottom: 1px solid #535353;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .yourChannelProfile > .yourProfile {
+    height: 100%;
+    width: 25%;
+    background: url("../img/user.png") no-repeat 50% 25%;
+    background-size: 55%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .yourChannelProfile > .nickName {
+    width: 75%;
+    padding-top: 10px;
+    font-family: "Roboto","Arial",sans-serif;
+    color: white;
+    font-size: 17px;
+}
+.header > .end > .endHeaderItems > .yourChannelMenu > .yourChannelProfile > .userName {
+    width: 75%;
+    padding-top: 5px;
+    font-family: "Roboto","Arial",sans-serif;
+    color: white;
+    font-size: 17px;
+}
+.header > .end > .endHeaderItems > .yourChannelMenu > .yourChannelProfile > .viewChannel {
+    width: 75%;
+    padding-top: 10px;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #3EA6EB;
+    font-size: 14px;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .title {
+    font-family: "Roboto","Arial",sans-serif;
+    color: white;
+    margin-left: 16px;
+    font-size: 15px;
+
+}
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .icon {
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconGoogle {
+    background: url(../img/icons8-google-50.jpg);
+    background-size: 100%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconSwitch {
+    background: url(../img/icons8-name-50\(1\).png);
+    background-size: 100%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconSignOut {
+    background: url(../img/icons8-sign-out-50\(1\).png);
+    background-size: 100%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconPurchases {
+    background: url(../img/icons8-dollar-50\(1\).png);
+    background-size: 100%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconAppearence {
+    background: url(../img/icons8-moon-50\(1\).png);
+    background-size: 100%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconLanguage {
+    background: url(../img/translate\(1\).png) no-repeat 50% 50%;
+    background-size: 80%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconRestricted {
+    background: url(../img/security\(1\).png) no-repeat 50% 50%;
+    background-size: 80%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconLocation {
+    background: url(../img/globe\(1\).png) no-repeat 50% 50%;
+    background-size: 90%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconKeyboard {
+    background: url(../img/keyboard\(1\).png) no-repeat 50% 50%;
+    background-size: 90%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconSettings {
+    background: url(../img/setting\(1\).png) no-repeat 50% 50%;
+    background-size: 90%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconHelp {
+    background: url(../img/icons8-help-50\(1\).png) no-repeat 50% 50%;
+    background-size: 90%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .channelMenuItems > .iconFeedBack {
+    background: url(../img/icons8-message-80\(1\).png) no-repeat 50% 50%;
+    background-size: 90%;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .borderTop {
+    padding-top: 8px;
+}
+
+.header > .end > .endHeaderItems > .yourChannelMenu > .borderBottom {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #535353;
+}
+
+/* responsive */
+
+@media screen and (max-width:1436px) {
+    .header {
+        gap: 100px;
+    }
+    .header > .start > .menu {
+        width: 29%;
+        background-size: 65%;
+    }
+}
+@media screen and (max-width:1336px) {
+    .header {
+        gap: 50px;
+    }
+    .header > .start > .menu {
+        width: 30%;
+        background-size: 70%;
+    }
+}
+@media screen and (max-width:1236px) {
+    .header {
+        gap: 10px;
+    }
+    .header > .start > .menu {
+        width: 31%;
+        background-size: 75%;
+    }
+}
+@media screen and (max-width:1136px) {
+    .header {
+        gap: 0px;
+    }
+    .header > .start > .menu {
+        width: 32%;
+        background-size: 80%;
+    }
+    .header > .center > .search {
+        width: 70%;
+    }
+    .header > .center{
+        width: 40%;
+    }
+    .header > .center > .mic {
+        display: none;
+    }
+    .header > .end > .endHeaderItems:not(.profilePicture) {
+        display: none;
+    }
+
+    .header > .start > .logo {
+        display: none;
+    }
+}
+    @media screen and (max-width:800px) {
+        .header > .end {
+            width: 100px;
+        }
+        .center > .search > #search{
+            background: none;
+            text-align: center;
+        }
+        .header > .end {
+            width: 50px;
+        }
+        .header > .start > .menu {
+            width: 70%;
+            height: 70%;
+            background-size: 40%;
+        }
+    }
+    @media screen and (max-width:700px) {
+        .header > .end {
+            width: 50px;
+        }
+        .header > .start > .menu {
+            width: 80%;
+            height: 80%;
+            background-size: 60%;
+        }
+    }
+    @media screen and (max-width:600px) {
+        .header > .start > .menu {
+            background-size: 80%;
+        }
+    }
+    @media screen and (max-width:600px) {
+        .header > .start > .menu {
+            background-size: 90%;
+        }
+    }

@@ -1,0 +1,74 @@
+.showList {
+    justify-content: center;
+    flex-flow: row wrap;
+    background: #0F0F0F;
+    width: 84.375%;
+    margin-left: 15.625%;
+}
+
+.showList > .videoListView {
+    width: 1070px;
+    height: 182px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 24px 0 24px 0;
+    align-items: flex-start;
+
+}
+
+.showList > .videoListView > .inline {
+    height: 40px;
+    display: flex;
+}
+
+.showList > .videoListView > .inline > .profileChannel {
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.showList > .videoListView > .inline > .channelName {
+    font-family: roboto;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0 0 8px;
+}
+
+.showList > .videoListView > .thumbnail {
+    width: 246px;
+    height: 138px;
+}
+
+.showList > .videoListView > .videoTitle {
+    font-family: robotoL;
+    color: white;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.showList > .videoListView > .channelStatus > .channelName {
+    color: gray;
+    font-family: roboto;
+    font-size: 13px;
+}
+
+.showList > .videoListView > .channelStatus > .videoView {
+    color: gray;
+    font-family: roboto;
+    font-size: 13px;
+}
+
+.showList > .videoListView > .channelStatus > .videoDate {
+    color: gray;
+    font-family: roboto;
+    font-size: 13px;
+}
+
+.showList > .videoListView > .videoDiscription {
+    color: gray;
+    font-family: roboto;
+    font-size: 13px;
+    width: 60%;
+}

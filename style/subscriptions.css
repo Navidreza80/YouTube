@@ -1,0 +1,136 @@
+#subscriptionsGrid {
+    justify-content: center;
+    flex-flow: row wrap;
+    background: #0F0F0F;
+    width: 84.375%;
+    margin-left: 15.625%;
+}
+
+#subscriptionsGrid > .top {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 1248px;
+    height: 68px;
+}
+
+#subscriptionsGrid > .top > .filter {
+    font-family: roboto;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#subscriptionsGrid > .top > .manageSubscribers {
+    color: #3EA6FF;
+    font-family: roboto;
+    float: right;
+    margin-left: 1040px;
+    font-size: 14px;
+}
+
+#subscriptionsGrid > .top > .gridView {
+    background: url("../img/icons8-grid-24.png") no-repeat 50% 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 17px;
+}
+
+#subscriptionsGrid > .top > .listView {
+    background: url("../img/icons8-list-64.png") no-repeat 50% 50%;
+    background-size: 55%;
+    width: 40px;
+    height: 40px;
+}
+
+#subscriptionsGrid > .contentSubscriptions {
+    width: 100%;
+    background: hsl(0, 0%, 6%);
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+#subscriptionsGrid > .contentSubscriptions > .recommendedTop {
+    width: 1100px;
+    height: 56px;
+    border: 1px solid #ccc;
+}
+
+#subscriptionsGrid > .contentSubscriptions > .video {
+    width: 405.317px;
+    height: 327.983px;
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 227.983px;
+    border-radius: 5%;
+
+}
+
+#subscriptionsGrid > .contentSubscriptions > .video > .videoDuration {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 200px;
+    right: 12px;
+    border-radius: 3px;
+    background: #212121c5;
+    color: white;
+    font-family: roboto;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#subscriptionsGrid > .contentSubscriptions > .video > .channelProfile {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+}
+
+#subscriptionsGrid > .contentSubscriptions > .video > .videoDiscription {
+    color: white;
+    font-family: roboto;
+    width: 80%;
+    height: 20px;
+    line-height: 32px;
+    margin-left: 10px;
+}
+
+#subscriptionsGrid > .contentSubscriptions > .video > .channelName {
+    width: 100%;
+    color: gray;
+    font-family: roboto;
+    font-size: 15px;
+    margin-left: 49px;
+    margin-top: -18px;
+
+}
+
+#subscriptionsGrid > .contentSubscriptions > .video > .videoView {
+    color: gray;
+    font-family: roboto;
+    font-size: 15px;
+    margin-left: 49px;
+    margin-top: -10px;
+}
+
+
+#subscriptionsGrid > .contentSubscriptions > .video > .videoDate {
+    height: 10px;
+    color: gray;
+    font-family: roboto;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 10px;
+}

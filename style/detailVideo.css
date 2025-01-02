@@ -1,0 +1,291 @@
+#detailVideo {
+    background: #0F0F0F;
+    justify-content: center;
+    width: 100%;
+}
+
+#detailVideo > .mainVideoDetail {
+    width: 58.06640625%;
+    padding: 24px 24px 0 0;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideo {
+    width: 100%;
+    height: 515.183px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 100px 1px white;
+}
+
+#detailVideo > .mainVideoDetail > #titleVideoDetail {
+    width: 100%;
+    height: 28px;
+    padding: 8px 0 0 0;
+    color: white;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus {
+    width: 100%;
+    padding: 12px 0 12px 0;
+    height: 42.4px;
+    display: flex;
+    align-items: center;
+
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .channelProfile2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .holderstatus {
+    height: 100%;
+    width: 120px;
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .holderstatus > .channelNameDetail {
+    color: white;
+    font-family: roboto;
+    cursor: pointer;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .holderstatus > .channelSubscribers {
+    color: gray;
+    font-family: roboto;
+    font-size: 13px;
+}
+
+.subscribeButton {
+    width: 94.6px;
+    height: 36px;
+    background: white;
+    text-align: center;
+    font-family: roboto;
+    border-radius: 40px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > #videoLikeButtonid {
+    width: 48px;
+    height: 22px;
+    padding: 8px 5px 6px 15px;
+    border-radius: 20px 0 0 20px;
+    margin-left: 300px;
+    background-image: url("../img/icons8-like-50\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-color: #282828;
+    background-size: 35%;
+    border-right: 1px solid #9d9d9d;
+    text-align: right;
+    color: white;
+    font-family: roboto;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .videoLikeButton:hover {
+    background-color: #4A4748;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .videoDislikeButton {
+    width: 52px;
+    height: 36px;
+    border-radius: 0 20px  20px 0;
+    background: url("../img/icons8-dislike-50\(1\).png") no-repeat 50% 50%;
+    background-color: #282828;
+    background-size: 45%;
+    text-align: right;
+    color: white;
+    font-family: roboto;
+    cursor: pointer;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .videoDislikeButton:hover {
+    background-color: #4A4748;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .videoShareButton {
+    width: 66px;
+    height: 22px;
+    border-radius: 20px;
+    padding: 8px 20px 6px 6px;
+    background: url("../img/icons8-share-24\(1\).png") no-repeat 10% 50%;
+    background-color: #282828;
+    background-size: 20%;
+    text-align: right;
+    color: white;
+    font-family: roboto;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .videoShareButton:hover {
+    background-color: #4A4748;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .videoSaveToButton {
+    width: 66px;
+    height: 22px;
+    border-radius: 20px;
+    padding: 8px 20px 6px 6px;
+    background: url("../img/save.png") no-repeat 15% 50%;
+    background-color: #282828;
+    background-size: 30%;
+    text-align: right;
+    color: white;
+    font-family: roboto;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoStatus > .videoSaveToButton:hover {
+    background-color: #4A4748;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoDescription {
+    width: 98.68981329839502%;
+    padding: 12px 0 0 12px;
+    height: 84px;
+    color: white;
+    font-family: roboto;
+    font-size: 13pxpx;
+    font-weight: 400;
+    background: #282828;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoCommentSorting {
+    width: 100%;
+    padding: 24px 0 24px 0;
+    height: 28px;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoCommentSorting > .commentsNumber {
+    color: white;
+    font-family: roboto;
+    font-size: 21px;
+    font-weight: 500;
+    float: left;
+}
+
+#detailVideo > .mainVideoDetail > .currentVideoCommentSorting > .sortComment {
+    color: white;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+    float: left;
+    line-height: 29px;
+    margin-left: 40px;
+    width: 80px;
+    background: url("../img/icons8-sort-50.png") no-repeat -20% 50%;
+    background-size: 40%;
+    text-align: right;
+    cursor: pointer;
+}
+
+#detailVideo > .mainVideoDetail > .sendComment {
+    width: 100%;
+    padding: 0px 0 32px 0;
+    height: 16px;
+}
+
+#detailVideo > .mainVideoDetail > .sendComment > .channelProfile {
+    width: 40px;
+    height: 40px;
+    background: url("../img/bahrololom.jpg") 50% 50%;
+    background-size: 100%;
+    border-radius: 100%;
+    float: left;
+}
+
+#detailVideo > .mainVideoDetail > .sendComment > .addComment {
+    width: 94.53551912568306%;
+    border-bottom: 1px solid gray;
+    font-family: roboto;
+    color: gray;
+    font-size: 14px;
+    float: left;
+    margin-left: 8px;
+}
+
+#detailVideo > .mainVideoDetail > .allComments {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+#detailVideo > .sideVideoDetail {
+    width: 26.171875%;
+    padding-top: 24px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+
+}
+
+#detailVideo > .sideVideoDetail > .relatedVideos  {
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: left;
+    flex-flow: column wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#detailVideo > .sideVideoDetail > .relatedVideos > .thumbnail {
+    width: 168px;
+    height: 100%;
+}
+
+#detailVideo > .sideVideoDetail > .relatedVideos > .videoDiscription {
+    color: white;
+    font-family: roboto;
+    font-size: 14px;
+    height: 10px;
+    padding-bottom: 30px;
+    width: 60%;
+}
+
+#detailVideo > .sideVideoDetail > .relatedVideos > .channelName {
+    color: gray;
+    font-family: roboto;
+    font-size: 12px;
+
+}
+
+#detailVideo > .sideVideoDetail > .relatedVideos > .viewAndDate > .videoView {
+    color: gray;
+    font-family: roboto;
+    font-size: 12px;
+    width: 70px;
+}
+
+#detailVideo > .sideVideoDetail > .relatedVideos > .viewAndDate > .videoDate {
+    color: gray;
+    font-family: roboto;
+    font-size: 12px;
+    width: 70px;
+}
+

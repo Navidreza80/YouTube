@@ -1,0 +1,226 @@
+.lightModeBody{
+    background: #fff;
+}
+.sideLeftGuide.lightModeSide > div > div{
+    color: #0f0f0f; 
+    font-weight: 700;
+}
+.header.lightModeHeader{
+    background: #fff;
+}
+.header.lightModeHeader > .center > .search > #search{
+    background: #fff url("../img/icons8-search-50\(1\).png") no-repeat 135% 50%;
+    color: #6d6d6d;
+    border: 1px solid #ccc;
+    background-size: 33%;
+}
+.header.lightModeHeader > .end > .endHeaderItems > .videoUpload{
+    background: url("../img/icons8-video-camera-25.png") no-repeat 50% 50%;
+}
+.header.lightModeHeader > .end > .endHeaderItems > .videoUpload{
+    background: url("../img/icons8-video-camera-25.png") no-repeat 50% 50%;
+}
+.header.lightModeHeader > .end > .endHeaderItems > .notification{
+    background: url("../img/icons8-bell-48.png") no-repeat 50% 50%;
+    background-size: 100%;
+}
+.header.lightModeHeader > .start > .logo{
+    background-image: url("../img/ytl.png");
+}
+.header.lightModeHeader  > .start > .menu{
+    background: #fff url("../img/icons8-menud-64.png") no-repeat 50% 50%;
+    background-size: 80%;
+}
+.header.lightModeHeader  > .start > .menu:hover{
+   background: #171717("../img/icons8-menud-64.png") no-repeat 50% 50%; 
+}
+.header.lightModeHeader > .center > .mic {
+    background: #e3e3e3 url("../img/icons8-microphone-24.png") no-repeat 50% 50%;
+}
+.sideLeftGuide.lightModeSide > div > div:hover {
+    background-color: #f2f2f2;
+}
+.sideLeftGuide.lightModeSide > .main > .home {
+    background-image: url("../img/home\(1\).png");
+    background-color: #f2f2f2;
+}
+.sideLeftGuide.lightModeSide > .main > .short {
+    background-image: url("../img/icons8-youtube-shorts-24\(1\).png");
+}
+.sideLeftGuide.lightModeSide > .main > .subscriptions {
+    background-image: url("../img/icons8-subscription-24.png");
+}
+.sideLeftGuide.lightModeSide > .you > .youTitle {
+    background-image: url("../img/Screenshot\ \(44\).png");
+    background-size: 25%;
+    margin-left: 10px;
+}
+.sideLeftGuide.lightModeSide > .you > .youTitle:hover {
+    background-image: url("../img/Screenshot\ \(44\).png");    
+    background-color: #fff;
+}
+.sideLeftGuide.lightModeSide > .you > .yourChannel {
+    background-image: url("../img/icons8-name-50.png");
+}
+.sideLeftGuide.lightModeSide > .you > .historyIc {
+    background-image: url("../img/icons8-history-24\(1\).png");
+}
+.sideLeftGuide.lightModeSide > .you > .playlists {
+    background-image: url("../img/icons8-playlist-24.png");
+}
+.sideLeftGuide.lightModeSide > .you > .yourVideos {
+    background-image: url("../img/icons8-video-24\(1\).png");
+}
+.sideLeftGuide.lightModeSide > .you > .watchLater {
+    background-image: url("../img/icons8-clock-24.png");
+}
+.sideLeftGuide.lightModeSide > .you > .likedVideos {
+    background-image: url("../img/icons8-thumbs-up-24.png");
+}
+.sideLeftGuide.lightModeSide > .explore > .trending {
+    background-image: url("../img/icons8-fire-50.png");
+}
+.sideLeftGuide.lightModeSide > .explore > .music {
+    background-image: url("../img/icons8-music-50.png");
+}
+.sideLeftGuide.lightModeSide > .explore > .live {
+    background-image: url("../img/icons8-live-50.png");
+}
+.sideLeftGuide.lightModeSide > .explore > .gaming {
+    background-image: url("../img/icons8-game-50\(1\).png");
+}
+.sideLeftGuide.lightModeSide > .explore > .news {
+    background-image: url("../img/icons8-google-news-50.png");
+}
+.sideLeftGuide.lightModeSide > .explore > .sport {
+    background-image: url("../img/icons8-trophy-64.png");
+}
+.sideLeftGuide.lightModeSide > .explore > .learning {
+    background-image: url("../img/icons8-idea-64.png");
+}
+.sideLeftGuide.lightModeSide > .explore > .fashionAndBeauty {
+    background-image: url("../img/icons8-hanger-48.png");
+}
+.sideLeftGuide.lightModeSide > .support > .settings {
+    background-image: url("../img/icons8-setting-32.png");
+}
+.sideLeftGuide.lightModeSide > .support > .reportHistory {
+    background-image: url("../img/icons8-flag-24\(1\).png");
+}
+.sideLeftGuide.lightModeSide > .support > .help {
+    background-image: url("../img/icons8-help-50.png");
+}
+.sideLeftGuide.lightModeSide > .support > .sendFeedback {
+    background-image: url("../img/icons8-message-80.png");
+}
+#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > #videoLikeButtonid{
+    background-image: url("../img/icons8-like-50.png");
+}
+#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > .videoDislikeButton{
+    background: url("../img/icons8-dislike-50.png") no-repeat 50% 50%;
+    background-size: 45%;
+}
+#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > .videoSaveToButton{
+    background: url("../img/icons8-save-search-50.png") no-repeat 15% 50%;
+    background-size: 25%;
+}
+.mainPage.lightModeGrid > .video > .videoDiscription{
+    color: #0f0f0f;
+}
+.mainPage.lightModeGrid > .video > .channelName:hover {
+    color: rgb(0, 0, 0);
+}
+#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > .holderstatus > .channelNameDetail{
+    color: #0f0f0f;
+}
+#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > .subscribeButton{
+    background-color: #0f0f0f;
+    color: #fff;
+}
+#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > #videoLikeButtonid,#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > .videoDislikeButton,#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > .videoShareButton,#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoStatus > .videoSaveToButton,#detailVideo.lightModeVideoDetail > .mainVideoDetail > .currentVideoDescription{
+    background-color: #f2f2f2;
+    color: #171717;
+}
+#detailVideo.lightModeVideoDetail > .mainVideoDetail > #titleVideoDetail{
+    color: #0f0f0f;
+}
+#channelDetail.lightModeChannelDetail > .headerChannelDetail > .channelStatus > .channelNamechd{
+    color: #0f0f0f;
+}
+#channelDetail.lightModeChannelDetail > .headerChannelDetail > .channelStatus > .subscribeButton{
+    background-color: #0f0f0f;
+    color: #f2f2f2;
+}
+#yourChannelMenu.lightModeYourMenu {
+    background-color: #fff;
+    color: #0f0f0f;
+}
+
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .title , #yourChannelMenu.lightModeYourMenu > .yourChannelProfile > .nickName,#yourChannelMenu.lightModeYourMenu > .yourChannelProfile > .userName{
+    color: #0f0f0f;
+}
+
+#yourChannelMenu.lightModeYourMenu > .yourChannelProfile > .nickName{
+    color: #0f0f0f;
+}
+
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .icon {
+background-size: 100%;
+}
+
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconGoogle {
+    background: url(../img/icons8-google-50\(1\).png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconSwitch {
+    background: url(../img/icons8-name-50.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconSignOut {
+    background: url(../img/icons8-sign-out-50.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconStudio {
+    background: url(../img/icons8-youtube-studio-48.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconPurchases {
+    background: url(../img/icons8-dollar-50.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconData {
+    background: url(../img/user2.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconAppearence {
+    background: url(../img/icons8-moon-50.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconLanguage {
+    background: url(../img/translate.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconRestricted {
+    background: url(../img/security.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconLocation {
+    background: url(../img/globe.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconKeyboard {
+    background: url(../img/keyboard.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconSettings {
+    background: url(../img/icons8-setting-32.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconHelp {
+    background: url(../img/icons8-help-50.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+#yourChannelMenu.lightModeYourMenu > .channelMenuItems > .iconFeedBack {
+    background: url(../img/icons8-message-80.png) no-repeat 50% 50%;
+    background-size: 100%;
+}

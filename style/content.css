@@ -1,0 +1,381 @@
+.content {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-top: 56px;
+}
+
+.sideLeftGuide {
+    width: 15.625%;
+    max-height: 700px;
+    background: #0F0F0F;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    overflow-y: auto;
+    position: fixed;
+    top: 56px;
+}
+
+.sideLeftGuide > div {
+    padding: 12px 0 12px 0;
+    width: 214px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    border-bottom: 1px solid #464646;
+    cursor: pointer;
+}
+
+.sideLeftGuide > div > div {
+    width: 180px;
+    padding: 0 12px 0 12px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 40px;
+    font-family: robotoL;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #0F0F0F;
+}
+.sideLeftGuide > div > div:hover {
+    background-color: #272727;
+}
+
+.sideLeftGuide > div > div > div {
+    margin-left: 43px;
+}
+
+.sideLeftGuide > .main > .home > div {
+    font-weight: 500;
+    font-family: roboto;
+}
+
+.sideLeftGuide > .main > .home {
+    background-image: url("../img/home\(2\).png");
+    background-color: #272727;
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .main > .home:hover {
+    background-color: #3D3D3D;
+}
+
+.sideLeftGuide > .main > .short {
+    background-image: url("../img/icons8-youtube-shorts-24\(2\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .main > .subscriptions {
+    background-image: url("../img/icons8-subscription-24\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .you > .youTitle  {
+    background-image: url("../img/you.png");
+    background-position: 0% 65%;
+    background-repeat: no-repeat;
+    background-size: 75px;
+}
+
+.sideLeftGuide > .you > .yourChannel {
+    background-image: url("../img//icons8-name-50\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .you > .historyIc {
+    background-image: url("../img/icons8-history-24.png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 25px;
+}
+
+.sideLeftGuide > .you > .playlists {
+    background-image: url("../img/icons8-playlist-24\(1\).png");
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 5% 45%;
+}
+
+.sideLeftGuide > .you > .yourVideos {
+    background-image: url("../img/icons8-video-24.png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .you > .watchLater {
+    background-image: url("../img/icons8-clock-24\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .you > .likedVideos {
+    background-image: url("../img/icons8-thumbs-up-24l.png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .subscriptions {
+    color: white;
+    font-family: roboto;
+    font-size: 16px;
+}
+.sideLeftGuide > .subscriptions > .subscriptionsTitle {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sideLeftGuide > .explore > .exploreTitle {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* filterd data */
+
+.sideLeftGuide > .explore > div > label {
+    margin-left: 43px;
+}
+
+.sideLeftGuide > .explore > div > input {
+    display: none;
+}
+.sideLeftGuide > .you > div > input {
+    display: none;
+}
+.sideLeftGuide > .you > div > label {
+    margin-left: 43px;
+}
+
+.sideLeftGuide > .explore > .trending {
+    background-image: url("../img/icons8-fire-50\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .explore > .music {
+    background-image: url("../img/icons8-music-50\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 22px;
+}
+
+.sideLeftGuide > .explore > .live {
+    background-image: url("../img/icons8-live-50\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 24px;
+}
+
+.sideLeftGuide > .explore > .gaming {
+    background-image: url("../img/icons8-game-50.png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 24px;
+}
+
+.sideLeftGuide > .explore > .news {
+    background-image: url("../img/icons8-google-news-50\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 23px;
+}
+
+.sideLeftGuide > .explore > .sport {
+    background-image: url("../img/icons8-trophy-64\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 23px;
+}
+
+.sideLeftGuide > .explore > .learning {
+    background-image: url("../img/icons8-idea-64\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 24px;
+}
+
+.sideLeftGuide > .explore > .fashionAndBeauty {
+    background-image: url("../img/icons8-hanger-48\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 20px;
+}
+
+.sideLeftGuide > .more > .moreTitle {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sideLeftGuide > .more > .youtubeStudio {
+    background-image: url("../img/icons8-youtube-studio-48.png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 26px;
+}
+
+.sideLeftGuide > .more > .youtubeKids {
+    background-image: url("../img/icons8-youtube-48.png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 23px;
+}
+
+.sideLeftGuide > .support > .settings {
+    background-image: url("../img/icons8-setting-32\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 23px;
+}
+
+.sideLeftGuide > .support > .reportHistory {
+    background-image: url("../img/icons8-flag-24.png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 22px;
+}
+.sideLeftGuide > .support > .help {
+    background-image: url("../img/icons8-help-50\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 22px;
+}
+.sideLeftGuide > .support > .sendFeedback {
+    background-image: url("../img/icons8-message-80\(1\).png");
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+    background-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content > .mainPage {
+    /* width: 1296px; */
+    width: 84.375%;
+    background: #0F0F0F;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-left: 15.625%;
+    gap: 10px;
+}
+
+.content > .mainPage > .video {
+    /* width: 405.317px; */
+    width: 31.27445987654321%;
+    height: 327.983px;
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    cursor: pointer;
+}
+
+.video > .holderTum {
+    width: 100%;
+    /* height: 227.983px; */
+    height: 69.51061487942973%;
+    position: relative;
+}
+
+.content > .mainPage > .video > .holderTum > .thumbnail {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+
+}
+
+.video > .holderTum > .videoDuration {
+    /* width: 50px; */
+    width: 12.33602340883802%;
+    /* height: 20px; */
+    height: 8.772583920730932%;
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+    border-radius: 3px;
+    background: #212121c5;
+    color: white;
+    font-family: roboto;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.content > .mainPage > .video > .channelProfile {
+    /* width: 36px; */
+    width: 8.881936854363375%;
+    /* height: 36px; */
+    height: 10.9761786434053%;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+}
+
+.content > .mainPage > .video > .videoDiscription {
+    color: white;
+    font-family: roboto;
+    width: 80%;
+    /* height: 20px; */
+    height: 6.097877024114055%;
+    line-height: 32px;
+    margin-left: 10px;
+}
+
+.content > .mainPage > .video > .channelName {
+    width: 100%;
+    color: gray;
+    font-family: roboto;
+    font-size: 15px;
+    margin-left: 49px;
+    margin-top: -18px;
+    transition: .5s;
+}
+.content > .mainPage > .video > .channelName:hover {
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+.content > .mainPage > .video > .videoView {
+    color: gray;
+    font-family: roboto;
+    font-size: 15px;
+    margin-left: 49px;
+    margin-top: -10px;
+}
+
+
+.content > .mainPage > .video > .videoDate {
+    /* height: 10px; */
+    height: 3.048938512057027%;
+    color: gray;
+    font-family: roboto;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
